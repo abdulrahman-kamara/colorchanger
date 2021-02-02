@@ -1,14 +1,6 @@
-// let button = document.querySelector('input');
-// button.addEventListener('click', changeColor);
-
-
-// function changeColor() {
-//     if (button.value === 'PressMe') {
-//         button.value = 'PressMe';
-//         paragraph.textContent = 'The color change'
-
-//     } else {
-//         button.value = 'PressMe';
-//         paragraph.textContent = 'The color change'
-//     }
-// }
+let color = ["#222f3e", "#000000", "#ee5253", "#0abde3"];
+let i = 0;
+document.querySelector("button").addEventListener('click', function() {
+    i = i < color.length ? ++i : 0;
+    document.querySelector('body').style.background = color[i]
+})
